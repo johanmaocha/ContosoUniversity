@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace ContosoUniversity.Repositories
 {
-     public interface IGenericRepository<TEntity> where TEntity : class
+    public interface IGenericRepository<TEntity> where TEntity : class
     {
         Task<List<TEntity>> GetAll();
 

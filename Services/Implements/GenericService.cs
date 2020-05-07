@@ -1,12 +1,12 @@
 ﻿using ContosoUniversity.Repositories;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ContosoUniversity.Services.Implements
 {
-    public class GenericService<TEntity> : IGenericService<TEntity>
-        where TEntity : class
+    public class GenericService<TEntity> : IGenericService<TEntity> where TEntity : class
     {
         private IGenericRepository<TEntity> _genericRepository;
 
@@ -23,6 +23,7 @@ namespace ContosoUniversity.Services.Implements
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }
@@ -45,6 +46,7 @@ namespace ContosoUniversity.Services.Implements
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }
@@ -57,6 +59,7 @@ namespace ContosoUniversity.Services.Implements
             }
             catch (Exception ex)
             {
+
                 throw ex;
             }
         }

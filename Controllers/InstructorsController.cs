@@ -79,8 +79,7 @@ namespace ContosoUniversity.Controllers
         }
 
         // POST: Instructors/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(InstructorDTO instructorDTO)
@@ -115,8 +114,7 @@ namespace ContosoUniversity.Controllers
         }
 
         // POST: Instructors/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(InstructorDTO instructorDTO)
@@ -172,9 +170,6 @@ namespace ContosoUniversity.Controllers
             }
         }
 
-        //private bool InstructorExists(int id)
-        //{
-        //    return _context.Instructor.Any(e => e.ID == id);
-        //}
+        
     }
 }
